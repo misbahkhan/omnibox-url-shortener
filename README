@@ -1,0 +1,6 @@
+|---------Instructions to package.---------|
+|Pretty simple extension. Makes an ajax cal|
+|-l to the goo.gl api, sends it the url you|
+|put in the omni box, returns the shortened|
+|url, and gives you a desktop notification.|
+|__________________________________________|
