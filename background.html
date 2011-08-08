@@ -14,7 +14,7 @@ chrome.omnibox.onInputEntered.addListener(
 	req.send(jURL);
 	var resp = eval("("+req.responseText+")");
 	var shrt = resp.id;
-	var notify = webkitNotifications.createNotification('Short URL',shrt);
+	var notify = webkitNotifications.createNotification('/images/img.png','Short URL',shrt);
 	notify.show();
   });
 </script>
