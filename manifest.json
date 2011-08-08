@@ -1,0 +1,8 @@
+{
+  "name": "URL Shortener",
+  "description" : "To use, type 'shrt' plus a URL into the Omnibox.",
+  "version": "1.0",
+  "background_page": "background.html",
+  "permissions":["notifications","https://www.googleapis.com/urlshortener/v1/url"],
+  "omnibox": { "keyword" : "shrt" }
+}
