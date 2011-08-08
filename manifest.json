@@ -4,5 +4,6 @@
   "version": "1.0",
   "background_page": "background.html",
   "permissions":["notifications","https://www.googleapis.com/urlshortener/v1/url"],
-  "omnibox": { "keyword" : "shrt" }
+  "omnibox": { "keyword" : "shrt" },
+  "icons":	{"16":"/images/16.png"}
 }
