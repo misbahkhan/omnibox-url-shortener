@@ -1,8 +1,7 @@
 <script>
-  chrome.omnibox.setDefaultSuggestion({
-    description: 'Shorten URL'
-  });
-// This event is fired with the user accepts the input in the omnibox.
+chrome.omnibox.setDefaultSuggestion({
+	description: 'Shorten URL'
+});
 chrome.omnibox.onInputEntered.addListener(
   function(text) {
   	console.log('inputEntered: ' + text);
@@ -13,8 +12,10 @@ chrome.omnibox.onInputEntered.addListener(
 	req.setRequestHeader("Content-type","application/json");
 	req.send(jURL);
 	var resp = eval("("+req.responseText+")");
-	var shrt = resp.id;
-	var notify = webkitNotifications.createNotification('/images/img.png','Short URL',shrt);
+	localStorage.setItem("shrturl",resp.id);
+	var shrt = localStorage.getItem("shrturl");
+	//var notify = webkitNotifications.createNotification('/images/img.png','Short URL',shrt);
+	var notify = webkitNotifications.createHTMLNotification('notif.html');
 	notify.show();
   });
 </script>
