@@ -1,6 +1,2 @@
-|----------Just some information-----------|
-|Pretty simple extension. Makes an ajax cal|
-|-l to the goo.gl api, sends it the url you|
-|put in the omni box, returns the shortened|
-|url, and gives you a desktop notification.|
-|__________________________________________|
+#omnibox-url-shortener
+Chrome extension to shorten the current URL (using goo.gl) within the omnibar. Result returned using desktop notification.
